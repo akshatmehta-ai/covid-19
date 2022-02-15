@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Covid-19 Tracker</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <h1>Covid-19 Cases Tracker</h1>
+    <form id="form">
+      <div class="center">
+        <input
+          id="countryname"
+          type="text"
+          placeholder="Country Name"
+          autocomplete="off"
+          required
+        />
+        <input id="btn" type="submit" value="Show Analytics" />
+      </div>
+    </form>
+    <div class="center"></div>
+    <div class="center">
+      <div id="active"></div>
+      <div id="death"></div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>

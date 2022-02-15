@@ -1,0 +1,56 @@
+body {
+  background-image: url(./images/Covid19_0.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: Oswald, sans-serif;
+  text-align: center;
+  color: rgb(250, 251, 253);
+
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 4px;
+}
+.color {
+  color: aliceblue;
+}
+.center {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#active {
+  padding-left: 150px;
+  background-color: rgba(0, 0, 0, 0.349);
+}
+#death {
+  background-color: rgba(0, 0, 0, 0.349);
+  padding-left: 150px;
+}
+#btn {
+  font-family: Oswald, sans-serif;
+  margin-left: 6px;
+  width: 10px 10px;
+  background-color: rgb(79, 170, 43);
+  border-radius: 15px;
+  text-align: center;
+  border: 3px solid rgb(231, 220, 220);
+  cursor: pointer;
+}
+
+#countryname {
+  margin-left: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: Oswald, sans-serif;
+  background-color: rgb(170, 250, 20);
+  border-radius: 15px;
+  text-align: center;
+  border: 3px solid rgb(247, 235, 235);
+}
