@@ -3,6 +3,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="apple-touch-icon"
@@ -32,22 +38,24 @@
   />
   <body>
     <h1>Covid-19 Cases Tracker</h1>
-    <form id="form">
+    <div class="container-fluid">
+      <form id="form">
+        <div class="center">
+          <input
+            id="countryname"
+            type="text"
+            placeholder="Country Name"
+            autocomplete="off"
+            required
+          />
+          <input id="btn" type="submit" value="Show Analytics" />
+        </div>
+      </form>
+      <div class="center"></div>
       <div class="center">
-        <input
-          id="countryname"
-          type="text"
-          placeholder="Country Name"
-          autocomplete="off"
-          required
-        />
-        <input id="btn" type="submit" value="Show Analytics" />
+        <div id="active"></div>
+        <div id="death"></div>
       </div>
-    </form>
-    <div class="center"></div>
-    <div class="center">
-      <div id="active"></div>
-      <div id="death"></div>
     </div>
   </body>
   <script src="./main.js"></script>
