@@ -1,31 +1,3 @@
-// fetch("https://imdb8.p.rapidapi.com/auto-complete?q=game%20of%20thrones", {
-//   method: "GET",
-//   headers: {
-//     "x-rapidapi-host": "imdb8.p.rapidapi.com",
-//     "x-rapidapi-key": "b6de29b671msh656afd628389116p121a33jsn8db112d6b133",
-//   },
-// })
-//   .then((response) => response.json())
-//   .then((data) => console.log(data))
-//   .catch((err) => {
-//     console.error(err);
-//   });
-// fetch(
-//   "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/total?country=India",
-//   {
-//     method: "GET",
-//     headers: {
-//       "x-rapidapi-host": "covid-19-coronavirus-statistics.p.rapidapi.com",
-//       "x-rapidapi-key": "b6de29b671msh656afd628389116p121a33jsn8db112d6b133",
-//     },
-//   }
-// )
-//   .then((response) => response.json())
-//   .then((data) => console.log(data))
-//   .catch((err) => {
-//     console.error(err);
-//   });
-
 let btn = document.getElementById("btn");
 
 let form = document.getElementById("form");
