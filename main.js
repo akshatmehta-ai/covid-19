@@ -2,7 +2,7 @@ let btn = document.getElementById("btn");
 
 let form = document.getElementById("form");
 let active = document.getElementById("active");
-let death = document.getElementById("death");
+let death = document.getElementById("deaths");
 
 form.addEventListener("submit", function search(e) {
   e.preventDefault(); //prevent auto submission of the form

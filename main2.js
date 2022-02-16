@@ -21,10 +21,7 @@ fetch(url)
     activecases.shift();
     death.shift();
     confirme.shift();
-    console.log(states);
-    console.log(death);
     active.append(data.statewise[0].active);
-
     recovered.append(data.statewise[0].recovered);
     confirmed.append(data.statewise[0].confirmed);
     deaths.append(data.statewise[0].deaths);
