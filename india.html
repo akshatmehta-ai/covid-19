@@ -32,7 +32,7 @@
       sizes="16x16"
       href="./images/favicon-16x16.png"
     />
-
+    <link rel="manifest" href="./site.webmanifest" />
     <title>Covid-19 Tracker</title>
   </head>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,30 +41,33 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@400;700&display=swap"
     rel="stylesheet"
   />
-  <body>
+  <body style="background-image: url(./images/bgcovid.jpg);">
     <div class="container-fluid">
-      <h1 class="text-center">Covid-19 Cases Tracker</h1>
-      <form id="form">
-        <div class="text-center">
-          <input
-            id="countryname"
-            type="text"
-            placeholder="Country Name"
-            autocomplete="off"
-            required
-          />
-          <input id="btn" type="submit" value="Show Analytics" />
-        </div>
-      </form>
-
-      <div class="text-center">
-        <div id="active"></div>
-        <div id="death"></div>
-      </div>
-      <div class="text-center">
-        <a class="my-5" href="./india.html">Click For India Data</a>
-      </div>
+      <h1 style="padding: 70px 3px;" class="text-center">Covid-19 Cases Tracker India</h1>
     </div>
+    <div class="container my-5">
+      <div class="row text-center">
+        <div class="col-3 text-warning">
+          <h5>Active Cases</h5>
+          <p id="active"></p>
+        </div>
+        <div class="col-3 text-info">
+          <h5>Confirmed</h5>
+          <p id="confirmed"></p>
+        </div>
+        <div class="col-3 text-success">
+          <h5>Recovered</h5>
+          <p id="recovered"></p>
+        </div>
+        <div class="col-3 text-danger">
+          <h5>Deaths</h5>
+          <p id="deaths"></p>
+        </div>
+      </div>
+      <canvas id="mychart"></canvas>
   </body>
-  <script src="./main.js"></script>
+  <script src="./main2.js"></script>
+  <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js">
+</script>
 </html>
